@@ -46,7 +46,7 @@
             this.lblCreate.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lblCreate.Font = new System.Drawing.Font("Nirmala UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCreate.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(86)))), ((int)(((byte)(174)))));
-            this.lblCreate.Location = new System.Drawing.Point(87, 472);
+            this.lblCreate.Location = new System.Drawing.Point(87, 516);
             this.lblCreate.Name = "lblCreate";
             this.lblCreate.Size = new System.Drawing.Size(157, 28);
             this.lblCreate.TabIndex = 23;
@@ -57,7 +57,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Nirmala UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(65, 453);
+            this.label2.Location = new System.Drawing.Point(65, 497);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(226, 28);
             this.label2.TabIndex = 22;
@@ -69,7 +69,7 @@
             this.btnClear.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnClear.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnClear.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(86)))), ((int)(((byte)(174)))));
-            this.btnClear.Location = new System.Drawing.Point(34, 401);
+            this.btnClear.Location = new System.Drawing.Point(34, 433);
             this.btnClear.Name = "btnClear";
             this.btnClear.Size = new System.Drawing.Size(216, 35);
             this.btnClear.TabIndex = 21;
@@ -84,7 +84,7 @@
             this.btnLogin.FlatAppearance.BorderSize = 0;
             this.btnLogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnLogin.ForeColor = System.Drawing.Color.White;
-            this.btnLogin.Location = new System.Drawing.Point(34, 352);
+            this.btnLogin.Location = new System.Drawing.Point(34, 384);
             this.btnLogin.Name = "btnLogin";
             this.btnLogin.Size = new System.Drawing.Size(216, 35);
             this.btnLogin.TabIndex = 20;
@@ -97,7 +97,7 @@
             this.chkbxShowPass.AutoSize = true;
             this.chkbxShowPass.Cursor = System.Windows.Forms.Cursors.Hand;
             this.chkbxShowPass.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.chkbxShowPass.Location = new System.Drawing.Point(126, 278);
+            this.chkbxShowPass.Location = new System.Drawing.Point(126, 295);
             this.chkbxShowPass.Name = "chkbxShowPass";
             this.chkbxShowPass.Size = new System.Drawing.Size(178, 32);
             this.chkbxShowPass.TabIndex = 19;
@@ -110,7 +110,7 @@
             this.txtPasswordL.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(231)))), ((int)(((byte)(233)))));
             this.txtPasswordL.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtPasswordL.Font = new System.Drawing.Font("MS UI Gothic", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPasswordL.Location = new System.Drawing.Point(31, 239);
+            this.txtPasswordL.Location = new System.Drawing.Point(31, 256);
             this.txtPasswordL.Multiline = true;
             this.txtPasswordL.Name = "txtPasswordL";
             this.txtPasswordL.PasswordChar = '*';
@@ -120,7 +120,7 @@
             // txtPassword
             // 
             this.txtPassword.AutoSize = true;
-            this.txtPassword.Location = new System.Drawing.Point(26, 214);
+            this.txtPassword.Location = new System.Drawing.Point(26, 231);
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.Size = new System.Drawing.Size(100, 28);
             this.txtPassword.TabIndex = 15;
@@ -131,7 +131,7 @@
             this.txtUsernameL.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(231)))), ((int)(((byte)(233)))));
             this.txtUsernameL.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtUsernameL.Font = new System.Drawing.Font("MS UI Gothic", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtUsernameL.Location = new System.Drawing.Point(31, 169);
+            this.txtUsernameL.Location = new System.Drawing.Point(31, 179);
             this.txtUsernameL.Multiline = true;
             this.txtUsernameL.Name = "txtUsernameL";
             this.txtUsernameL.Size = new System.Drawing.Size(216, 28);
@@ -140,7 +140,7 @@
             // LblUsername
             // 
             this.LblUsername.AutoSize = true;
-            this.LblUsername.Location = new System.Drawing.Point(26, 143);
+            this.LblUsername.Location = new System.Drawing.Point(26, 153);
             this.LblUsername.Name = "LblUsername";
             this.LblUsername.Size = new System.Drawing.Size(106, 28);
             this.LblUsername.TabIndex = 13;
@@ -162,7 +162,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 28F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(288, 535);
+            this.ClientSize = new System.Drawing.Size(288, 594);
             this.Controls.Add(this.lblCreate);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.btnClear);

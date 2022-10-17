@@ -12,13 +12,30 @@ namespace registraton_login_app
 {
     public partial class FrmRegister : Form
     {
+
+        private string captcha = "";
+        private Random random = new Random();
         public FrmRegister()
         {
             InitializeComponent();
         }
 
         
-
+        private void updateCaptcha()
+        {
+            string captcha = "";
+            for (int i = 0; i < random.Next(6, 10); i++)
+            {
+                if (random.Next(2) % 2 == 0)
+                {
+                    captcha += char.ConvertFromUtf32(random.Next(65, 91));
+                    continue;
+                }
+                captcha += char.ConvertFromUtf32(random.Next(48, 58));
+            }
+            this.captcha = captcha;
+            label4.Text = captcha;
+        }
 
         private void label1_Click(object sender, EventArgs e)
         {
@@ -43,6 +60,14 @@ namespace registraton_login_app
             }
             else if ((txtPassword.Text == txtConfirm.Text) && txtUsername.Text != Class1.login1 )
             {
+                if(textBox1.Text != captcha)
+                {
+                    MessageBox.Show("Captcha is incorrect!", "Registration Failed", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    updateCaptcha();
+                    textBox1.Text = "";
+                    textBox1.Focus();
+                    return;
+                }
                 Class1.login2 = txtUsername.Text;
                 Class1.pass2 = txtPassword.Text;
 
@@ -51,7 +76,7 @@ namespace registraton_login_app
                 txtPassword.Text = "";
                 txtConfirm.Text = "";
 
-                MessageBox.Show("Your account has been succesfully created!", "Registration Succes", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("Your account has been succesfully created!", "Registration Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             else
             {
@@ -93,6 +118,26 @@ namespace registraton_login_app
         }
 
         private void FrmRegister_Load(object sender, EventArgs e)
+        {
+            updateCaptcha();
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            updateCaptcha();
+        }
+
+        private void txtUsername_TextChanged(object sender, EventArgs e)
         {
 
         }
