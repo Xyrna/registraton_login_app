@@ -190,7 +190,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Bradley Hand ITC", 16F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(101, 352);
+            this.label4.Location = new System.Drawing.Point(93, 352);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(0, 40);
             this.label4.TabIndex = 12;

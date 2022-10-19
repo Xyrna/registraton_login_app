@@ -50,15 +50,7 @@ namespace registraton_login_app
                 MessageBox.Show("Please fill all fields!", "Registration failed", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
 
-            else if(txtUsername.Text == Class1.login1 || txtUsername.Text == Class1.login2)
-            {
-                MessageBox.Show("Account with this username is already created! Please, create another username", "Registration failed", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                txtPassword.Text = "";
-                txtConfirm.Text = "";
-                txtUsername.Text = "";
-                txtUsername.Focus();
-            }
-            else if ((txtPassword.Text == txtConfirm.Text) && txtUsername.Text != Class1.login1 )
+            else if ((txtPassword.Text == txtConfirm.Text) && !Account.AccountExists(txtUsername.Text) )
             {
                 if(textBox1.Text != captcha)
                 {
@@ -68,8 +60,7 @@ namespace registraton_login_app
                     textBox1.Focus();
                     return;
                 }
-                Class1.login2 = txtUsername.Text;
-                Class1.pass2 = txtPassword.Text;
+                Account.RegisterAccount(txtUsername.Text, txtPassword.Text);
 
                
                 txtUsername.Text = "";
@@ -77,6 +68,14 @@ namespace registraton_login_app
                 txtConfirm.Text = "";
 
                 MessageBox.Show("Your account has been succesfully created!", "Registration Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            else if(Account.AccountExists(txtUsername.Text))
+            {
+                MessageBox.Show("Account with this username is already created! Please, create another username", "Registration failed", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                txtPassword.Text = "";
+                txtConfirm.Text = "";
+                txtUsername.Text = "";
+                txtUsername.Focus();
             }
             else
             {

@@ -32,14 +32,9 @@ namespace registraton_login_app
         
         private void btnLogin_Click(object sender, EventArgs e)
         {
-            if (txtUsernameL.Text == Class1.login1 && txtPasswordL.Text == Class1.pass1)
+            if (Account.Login(txtUsernameL.Text, txtPasswordL.Text))
             {
-                MessageBox.Show($"Welcome, {Class1.login1}","Successfully logged into account", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            }
-            else if (txtUsernameL.Text == Class1.login2 && txtPasswordL.Text == Class1.pass2)
-            {
-                MessageBox.Show($"Welcome, {Class1.login2}", "Successfully logged into account", MessageBoxButtons.OK, MessageBoxIcon.Information);
-
+                MessageBox.Show($"Welcome, {txtUsernameL.Text}","Successfully logged into account", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             else
             {
